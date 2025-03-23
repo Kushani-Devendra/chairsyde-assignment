@@ -86,7 +86,7 @@
       <main class="w-full h-full flex flex-col">
         <!-- header section -->
         <header
-          class="white-bg flex justify-between items-center py-2 px-4 min-h-16 border-b border-color"
+          class="white-bg flex justify-between items-center pl-2 pr-18 md:pr-2 px-4 min-h-16 border-b border-color"
         >
           <!-- dropdown -->
           <div class="relative">
@@ -266,24 +266,33 @@
           </div>
         </div>
         <!-- toolbar section -->
-        <div class="flex items-center gap-4 px-4 py-5 border-t border-color">
+        <form
+          class="flex items-center gap-4 pl-4 pr-20 md:px-4 py-5 border-t border-color"
+        >
           <!-- message bar -->
           <div
             class="w-full flex items-center gap-2 px-3 py-2.5 gray-bg rounded-lg"
           >
             <img src="./assets/images/image 4.svg" alt="" />
             <div class="h-6 border border-color"></div>
-            <p class="text-sm disabled-fg">
-              Say "Hey Neo" or type here to ask anything...
-            </p>
+            <!-- input field -->
+            <input
+              type="text"
+              name="transcription-input"
+              class="w-full text-sm focus:outline-none"
+              placeholder='Say "Hey Neo" or type here to ask anything...'
+              required
+            />
           </div>
           <button
-            class="h-12 min-w-48 flex justify-center items-center gap-2 pl-4 pr-5 py-2 primary-bg rounded-lg cursor-pointer"
+            class="h-12 md:min-w-48 flex justify-center items-center gap-2 pl-5 md:pl-4 pr-5 py-2 primary-bg rounded-lg cursor-pointer"
           >
             <img src="./assets/images/icons/Icons-14.svg" alt="" />
-            <span class="other-button">Start transcribing</span>
+            <span class="other-button hidden md:block">
+              Start transcribing
+            </span>
           </button>
-        </div>
+        </form>
       </main>
       <!-- transcription section -->
       <div
