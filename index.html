@@ -13,11 +13,12 @@
       <!-- sidebar -->
       <aside
         class="flex flex-col justify-between items-center white-bg min-w-[56px] px-2 py-5 border-r border-color"
+        aria-label="Sidebar Navigation"
       >
         <!-- top nav links -->
         <div>
           <!-- logo -->
-          <a class="navLink" href="index.html">
+          <a class="navLink" href="index.html" aria-label="Go to home page">
             <img src="../assets/images/icons/logo.svg" alt="logo" />
           </a>
 
@@ -26,6 +27,7 @@
             <a
               class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
               href="index.html"
+              aria-label="Go to home page"
             >
               <img
                 class=""
@@ -37,6 +39,7 @@
             <a
               class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
               href="#"
+              aria-label="Go to people page"
             >
               <img src="../assets/images/icons/Icons-1.svg" alt="people" />
             </a>
@@ -44,6 +47,7 @@
             <a
               class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
               href="#"
+              aria-label="Go to history page"
             >
               <img src="../assets/images/icons/Icons-2.svg" alt="history" />
             </a>
@@ -51,6 +55,7 @@
             <a
               class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
               href="#"
+              aria-label="Go to gallery page"
             >
               <img src="../assets/images/icons/Icons-3.svg" alt="gallery" />
             </a>
@@ -58,6 +63,7 @@
             <a
               class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
               href="#"
+              aria-label="Go to videos page"
             >
               <img src="../assets/images/icons/Icons-4.svg" alt="video" />
             </a>
@@ -67,17 +73,19 @@
         <!-- bottom nav links -->
         <div class="mt-11 flex flex-col gap-2">
           <hr class="border-color" />
-          <!-- gallery -->
+          <!-- logout -->
           <a
             class="flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
             href="#"
+            aria-label="Logout"
           >
             <img src="../assets/images/icons/Icons-5.svg" alt="logout" />
           </a>
-          <!-- videos -->
+          <!-- settings -->
           <a
             class="flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
             href="#"
+            aria-label="Go to settings"
           >
             <img src="../assets/images/icons/Icons-6.svg" alt="settings" />
           </a>
@@ -113,7 +121,7 @@
               class="absolute z-10 top-8 w-60 white-bg rounded-lg border border-color origin-top-right transition-all duration-300 transform scale-95 opacity-0 invisible"
               role="menu"
               aria-orientation="vertical"
-              aria-labelledby="menu-button"
+              aria-labelledby="menuButton"
               tabindex="-1"
             >
               <!-- item 1 -->
@@ -173,6 +181,7 @@
           <!-- new note button -->
           <button
             class="flex justify-center items-center gap-2 pl-4 py-2 pr-5 rounded-lg border border-color hover:bg-gray-100 active:bg-gray-200 cursor-pointer"
+            aria-label="Create a new note"
           >
             <img src="./assets/images/icons/Icons-13.svg" alt="plus" />
             <p class="other-button">New notes</p>
@@ -298,6 +307,7 @@
       <div
         id="transcriptionBar"
         class="w-16 h-full white-bg border-l border-color transition-all duration-300 md:relative absolute z-10 top-0 right-0 md:top-auto md:right-auto"
+        aria-label="transcription panel"
       >
         <!-- header -->
         <div
