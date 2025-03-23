@@ -1,8 +1,8 @@
+// Menu Dropdown
 const menuButton = document.getElementById("menuButton");
 const dropdownMenu = document.getElementById("dropdownMenu");
 const menuIcon = document.getElementById("menuIcon");
 
-// Toggle menu with animation
 menuButton.addEventListener("click", () => {
   const isOpen = !dropdownMenu.classList.contains("invisible");
 
@@ -10,11 +10,9 @@ menuButton.addEventListener("click", () => {
   dropdownMenu.classList.toggle("opacity-0", isOpen);
   dropdownMenu.classList.toggle("scale-95", isOpen);
 
-  // Rotate icon 180deg when menu opens
   menuIcon.classList.toggle("rotate-180", !isOpen);
 });
 
-// Close when clicking outside
 window.addEventListener("click", (event) => {
   if (
     !menuButton.contains(event.target) &&
@@ -25,7 +23,7 @@ window.addEventListener("click", (event) => {
   }
 });
 
-// ------------------
+// Transcription Bar
 
 const chevronButton = document.getElementById("chevronButton");
 const chevronIcon = document.getElementById("chevronIcon");
@@ -34,11 +32,9 @@ const heading = document.getElementById("transcriptionHeading");
 const bookIcon = document.getElementById("bookIcon");
 const transcriptionBody = document.getElementById("transcriptionBody");
 
-// Toggle the transcription section
 chevronButton.addEventListener("click", () => {
   const isCollapsed = transcriptionSection.classList.contains("w-16");
 
-  // Toggle width, show/hide content, and rotate chevron
   transcriptionSection.classList.toggle("w-sm", isCollapsed);
   transcriptionSection.classList.toggle("w-16", !isCollapsed);
 
@@ -46,15 +42,14 @@ chevronButton.addEventListener("click", () => {
   bookIcon.classList.toggle("hidden", !isCollapsed);
   transcriptionBody.classList.toggle("opacity-0", !isCollapsed);
 
-  // Rotate the chevron
   chevronIcon.classList.toggle("rotate-180", isCollapsed);
 });
 
-// ----------------
+// Nav Link Active
 document.querySelectorAll(".navLink").forEach((item) => {
   item.addEventListener("click", function () {
     document
-      .querySelectorAll(".menu-item")
+      .querySelectorAll(".navLink")
       .forEach((link) => link.classList.remove("active"));
     this.classList.add("active");
   });
