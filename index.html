@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="h-screen flex">
+      <!-- sidebar -->
+      <aside
+        class="flex flex-col justify-between items-center bg-white min-w-[56px] px-2 py-5 border-r border-gray-300"
+      >
+        <!-- top nav links -->
+        <div>
+          <img src="./images/icons/logo.svg" alt="logo" />
+
+          <div class="mt-11 flex flex-col gap-2">
+            <!-- transcribe -->
+            <div
+              class="flex justify-center items-center h-10 w-10 bg-teal-100 rounded-full"
+            >
+              <img
+                class="stroke-teal-800 fill-teal-800"
+                src="./images/icons/Icons.svg"
+                alt=""
+              />
+            </div>
+            <!-- people -->
+            <div class="flex justify-center items-center h-10 w-10">
+              <img src="./images/icons/Icons-1.svg" alt="" />
+            </div>
+            <!-- history -->
+            <div class="flex justify-center items-center h-10 w-10">
+              <img src="./images/icons/Icons-2.svg" alt="" />
+            </div>
+            <!-- gallery -->
+            <div class="flex justify-center items-center h-10 w-10">
+              <img src="./images/icons/Icons-3.svg" alt="" />
+            </div>
+            <!-- videos -->
+            <div class="flex justify-center items-center h-10 w-10">
+              <img src="./images/icons/Icons-4.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom nav links -->
+        <div class="mt-11 flex flex-col gap-2">
+          <hr class="text-gray-200" />
+          <!-- gallery -->
+          <div class="flex justify-center items-center h-10 w-10">
+            <img src="./images/icons/Icons-5.svg" alt="" />
+          </div>
+          <!-- videos -->
+          <div class="flex justify-center items-center h-10 w-10">
+            <img src="./images/icons/Icons-6.svg" alt="" />
+          </div>
+        </div>
+      </aside>
+      <main class="w-full">
+        <!-- header section -->
+        <header
+          class="bg-white flex justify-between items-center py-2 px-4 min-h-16 border-b border-gray-300"
+        >
+          <!-- dropdown -->
+          <div class="relative">
+            <!-- menu button -->
+            <button
+              type="button"
+              class="flex gap-1 cursor-pointer"
+              id="menuButton"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <span class="text-base text-black">John Smith</span>
+              <img
+                id="menuIcon"
+                class="transition-transform duration-300"
+                src="/images/icons/Icons-17.svg"
+                alt="arrow"
+              />
+            </button>
+
+            <!-- menu -->
+            <ul
+              id="dropdownMenu"
+              class="absolute z-10 top-8 w-60 bg-white rounded-lg border border-gray-300 origin-top-right transition-all duration-300 transform scale-95 opacity-0 invisible"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+            >
+              <!-- item 1 -->
+              <li
+                class="flex justify-between items-center p-2 border-b border-b-gray-300"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-0"
+              >
+                <p class="text-base text-black">Robert Lindley</p>
+                <span class="text-base text-gray-500">13:43</span>
+              </li>
+
+              <!-- item 2 -->
+              <li
+                class="flex justify-between items-center p-2 border-b border-b-gray-300"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-1"
+              >
+                <p class="text-base text-black">Jane Smith</p>
+                <span class="text-base text-gray-500">13:16</span>
+              </li>
+              <!-- item 3 -->
+              <li
+                class="flex justify-between items-center p-2 border-b border-b-gray-300"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-2"
+              >
+                <p class="text-base text-black">Chris Thompson</p>
+                <span class="text-base text-gray-500">12:55</span>
+              </li>
+              <!-- item 4 -->
+              <li
+                class="flex justify-between items-center p-2 border-b border-b-gray-300"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-3"
+              >
+                <p class="text-base text-black">Aaminah Carlson</p>
+                <span class="text-base text-gray-500">12:21</span>
+              </li>
+              <!-- item 5 -->
+              <li
+                class="flex justify-between items-center p-2"
+                role="menuitem"
+                tabindex="-1"
+                id="menu-item-4"
+              >
+                <p class="text-base text-black">Sufyan Caldwell</p>
+                <span class="text-base text-gray-500">11:58</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- new note button -->
+          <button
+            class="flex justify-center items-center gap-2 pl-4 py-2 pr-5 rounded-lg border border-gray-300"
+          >
+            <img src="/images/icons/Icons-13.svg" alt="plus" />
+            <p class="font-medium text-base text-black">New notes</p>
+          </button>
+        </header>
+        <!-- body section -->
+        <div
+          class="h-full flex flex-col justify-center items-start p-12 bg-gray-100 overflow-y-auto"
+        >
+          <!-- subtitle -->
+          <span class="font-ch-main font-medium text-xl text-black opacity-60">
+            Hi, Jane
+          </span>
+
+          <!-- heading -->
+          <h2 class="font-ch-main font-medium text-4xl text-ch-black">
+            What would you like to do?
+          </h2>
+
+          <!-- cards -->
+          <div
+            class="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+          >
+            <!-- card 1 -->
+            <div class="px-4 py-5 bg-white rounded-2xl">
+              <!-- icon -->
+              <div
+                class="h-12 w-12 flex justify-center items-center border border-black rounded-full"
+              >
+                <img
+                  class="text-black"
+                  src="images/icons/Icons-9.svg"
+                  alt="tick"
+                />
+              </div>
+              <p class="mt-6 mb-2 font-medium text-base text-black">
+                Suggested
+              </p>
+              <span class="text-base text-black">
+                Robert booked for 2 white fillings in upper 1A and upper 1B.
+              </span>
+            </div>
+
+            <!-- card 2 -->
+            <div class="px-4 py-5 bg-white rounded-2xl">
+              <!-- icon -->
+              <div
+                class="h-12 w-12 flex justify-center items-center border border-black rounded-full"
+              >
+                <img
+                  class="text-black"
+                  src="images/icons/Icons-10.svg"
+                  alt="tick"
+                />
+              </div>
+              <p class="mt-6 mb-2 font-medium text-base text-black">
+                Continue from previous
+              </p>
+              <span class="text-base text-black">
+                Tooth ache and sensitivity in upper 1A.
+              </span>
+            </div>
+
+            <!-- card 3 -->
+            <div class="px-4 py-5 bg-white rounded-2xl">
+              <!-- icon -->
+              <div
+                class="h-12 w-12 flex justify-center items-center border border-black rounded-full"
+              >
+                <img
+                  class="text-black"
+                  src="images/icons/Icons-12.svg"
+                  alt="tick"
+                />
+              </div>
+              <p class="mt-6 mb-2 font-medium text-base text-black">
+                Update profile
+              </p>
+              <span class="text-base text-black">
+                Go to patient profile to add new information.
+              </span>
+            </div>
+
+            <!-- card 4 -->
+            <div class="px-4 py-5 bg-white rounded-2xl">
+              <!-- icon -->
+              <div
+                class="h-12 w-12 flex justify-center items-center border border-black rounded-full"
+              >
+                <img
+                  class="text-black"
+                  src="images/icons/Icons-13.svg"
+                  alt="tick"
+                />
+              </div>
+              <p class="mt-6 mb-2 font-medium text-base text-black">
+                Periodontitis
+              </p>
+              <span class="text-base text-black">
+                Bring up template for Periodontitis, rady to populate.
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- toolbar section -->
+        <div class="flex items-center gap-4 px-4 py-5 border-t border-gray-300">
+          <!-- message bar -->
+          <div
+            class="w-full flex items-center gap-2 px-3 py-2.5 bg-gray-100 rounded-lg"
+          >
+            <img src="/images/image 4.svg" alt="" />
+            <div class="h-6 border border-gray-300"></div>
+            <p class="text-sm text-gray-500">
+              Say "Hey Neo" or type here to ask anything...
+            </p>
+          </div>
+          <button
+            class="h-12 min-w-48 flex justify-center items-center gap-2 pl-4 pr-5 py-2 bg-teal-400 rounded-lg"
+          >
+            <img src="/images/icons/Icons-14.svg" alt="" />
+            <span class="font-medium text-base text-black"
+              >Start transcribing</span
+            >
+          </button>
+        </div>
+      </main>
+      <!-- transcription section -->
+      <div
+        id="transcriptionBar"
+        class="w-16 bg-white border-l border-gray-300 transition-all duration-300"
+      >
+        <!-- header -->
+        <div
+          class="flex justify-between items-center h-16 py-3 px-4 border-b border-b-gray-300"
+        >
+          <!-- chevron -->
+          <button id="chevronButton" type="button" class="cursor-pointer">
+            <img
+              id="chevronIcon"
+              class="transition-transform duration-300"
+              src="/images/icons/Icons-15.svg"
+              alt="chevron-right"
+            />
+          </button>
+          <!-- heading -->
+          <p
+            id="transcriptionHeading"
+            class="font-medium text-base text-black hidden"
+          >
+            Transcription
+          </p>
+          <!-- book -->
+          <img
+            id="bookIcon"
+            class="hidden"
+            src="/images/icons/Icons-18.svg"
+            alt="book"
+          />
+        </div>
+
+        <!-- body -->
+        <div
+          id="transcriptionBody"
+          class="p-4 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-base text-gray-500">
+            Start recording to get started...
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/script.js"></script>
+  </body>
+</html>
