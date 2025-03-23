@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --color-ch-black: #212121;
+  --color-ch-primary-dark: #296660;
+  --color-ch-primary: #4dd1c4;
+  --color-ch-primary-light: #dbf6f3;
+  --color-ch-text-gray: #666666;
+  --color-ch-text-disabled: #9e9e9e;
+  --color-ch-outline: #e0e0e0;
+  --color-ch-surface-gray: #f7f7f7;
+  --color-ch-white: #ffffff;
+
+  --font-ch-main: "Aeonik";
+}
+
+body {
+  color: var(--color-ch-black);
+  font-family: var(--font-ch-main), sans-serif;
+}
+
+.gray-bg {
+  background-color: var(--color-ch-surface-gray);
+}
+
+.white-bg {
+  background-color: var(--color-ch-white);
+}
+
+.primary-fg {
+  color: var(--color-ch-primary-dark);
+}
+
+.gray-fg {
+  color: var(--color-ch-text-gray);
+}
+
+.disabled-fg {
+  color: var(--color-ch-text-disabled);
+}
+
+.primary-bg {
+  background-color: var(--color-ch-primary);
+}
+
+.primary-active-bg {
+  background-color: var(--color-ch-primary-light);
+}
+
+.border-color {
+  border-color: var(--color-ch-outline);
+}
+
+.body-regular {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.body-regular-bold {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.other-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 2%;
+}
+
+.desktop-subtitle {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: -0.5%;
+  color: var(--color-ch-black);
+  opacity: 60%;
+}
+
+.desktop-h2 {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 40px;
+  letter-spacing: -0.5%;
+  color: var(--color-ch-black);
+}
+
+/* @layer base {
+  h1 {
+    font-size: var(--text-2xl);
+  }
+  h2 {
+    font-size: var(--text-xl);
+  }
+} */
