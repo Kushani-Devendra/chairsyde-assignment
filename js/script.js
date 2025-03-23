@@ -49,3 +49,13 @@ chevronButton.addEventListener("click", () => {
   // Rotate the chevron
   chevronIcon.classList.toggle("rotate-180", isCollapsed);
 });
+
+// ----------------
+document.querySelectorAll(".navLink").forEach((item) => {
+  item.addEventListener("click", function () {
+    document
+      .querySelectorAll(".menu-item")
+      .forEach((link) => link.classList.remove("active"));
+    this.classList.add("active");
+  });
+});

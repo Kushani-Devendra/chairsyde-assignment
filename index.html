@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="icon" href="./assets/images/icons/logo.svg" />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/tailwindcss.js"></script>
   </head>
   <body>
     <div class="h-screen flex">
@@ -15,34 +16,49 @@
       >
         <!-- top nav links -->
         <div>
-          <img src="../assets/images/icons/logo.svg" alt="logo" />
+          <!-- logo -->
+          <a class="navLink" href="index.html">
+            <img src="../assets/images/icons/logo.svg" alt="logo" />
+          </a>
 
           <div class="mt-11 flex flex-col gap-2">
             <!-- transcribe -->
             <a
-              class="flex justify-center items-center h-10 w-10 rounded-full"
-              href="#"
+              class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+              href="index.html"
             >
               <img
-                class="stroke-teal-800 fill-teal-800"
+                class=""
                 src="../assets/images/icons/Icons.svg"
                 alt="transcribe"
               />
             </a>
             <!-- people -->
-            <a class="flex justify-center items-center h-10 w-10" href="#">
+            <a
+              class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+              href="#"
+            >
               <img src="../assets/images/icons/Icons-1.svg" alt="people" />
             </a>
             <!-- history -->
-            <a class="flex justify-center items-center h-10 w-10" href="#">
+            <a
+              class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+              href="#"
+            >
               <img src="../assets/images/icons/Icons-2.svg" alt="history" />
             </a>
             <!-- gallery -->
-            <a class="flex justify-center items-center h-10 w-10" href="#">
+            <a
+              class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+              href="#"
+            >
               <img src="../assets/images/icons/Icons-3.svg" alt="gallery" />
             </a>
             <!-- videos -->
-            <a class="flex justify-center items-center h-10 w-10" href="#">
+            <a
+              class="navLink flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+              href="#"
+            >
               <img src="../assets/images/icons/Icons-4.svg" alt="video" />
             </a>
           </div>
@@ -52,11 +68,17 @@
         <div class="mt-11 flex flex-col gap-2">
           <hr class="border-color" />
           <!-- gallery -->
-          <a class="flex justify-center items-center h-10 w-10" href="#">
+          <a
+            class="flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+            href="#"
+          >
             <img src="../assets/images/icons/Icons-5.svg" alt="logout" />
           </a>
           <!-- videos -->
-          <a class="flex justify-center items-center h-10 w-10" href="#">
+          <a
+            class="flex justify-center items-center h-10 w-10 rounded-full hover:bg-gray-100"
+            href="#"
+          >
             <img src="../assets/images/icons/Icons-6.svg" alt="settings" />
           </a>
         </div>
@@ -76,7 +98,7 @@
               aria-expanded="true"
               aria-haspopup="true"
             >
-              <span class="text-base text-black">John Smith</span>
+              <span class="text-base">John Smith</span>
               <img
                 id="menuIcon"
                 class="transition-transform duration-300"
@@ -96,53 +118,53 @@
             >
               <!-- item 1 -->
               <li
-                class="flex justify-between items-center p-2 border-b border-color"
+                class="flex justify-between items-center p-2 border-b border-color hover:bg-gray-100"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-0"
               >
-                <p class="text-base text-black">Robert Lindley</p>
+                <p class="text-base">Robert Lindley</p>
                 <span class="text-base disabled-fg">13:43</span>
               </li>
 
               <!-- item 2 -->
               <li
-                class="flex justify-between items-center p-2 border-b border-color"
+                class="flex justify-between items-center p-2 border-b border-color hover:bg-gray-100"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-1"
               >
-                <p class="text-base text-black">Jane Smith</p>
+                <p class="text-base">Jane Smith</p>
                 <span class="text-base disabled-fg">13:16</span>
               </li>
               <!-- item 3 -->
               <li
-                class="flex justify-between items-center p-2 border-b border-color"
+                class="flex justify-between items-center p-2 border-b border-color hover:bg-gray-100"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-2"
               >
-                <p class="text-base text-black">Chris Thompson</p>
+                <p class="text-base">Chris Thompson</p>
                 <span class="text-base disabled-fg">12:55</span>
               </li>
               <!-- item 4 -->
               <li
-                class="flex justify-between items-center p-2 border-b border-color"
+                class="flex justify-between items-center p-2 border-b border-color hover:bg-gray-100"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-3"
               >
-                <p class="text-base text-black">Aaminah Carlson</p>
+                <p class="text-base">Aaminah Carlson</p>
                 <span class="text-base disabled-fg">12:21</span>
               </li>
               <!-- item 5 -->
               <li
-                class="flex justify-between items-center p-2"
+                class="flex justify-between items-center p-2 hover:bg-gray-100"
                 role="menuitem"
                 tabindex="-1"
                 id="menu-item-4"
               >
-                <p class="text-base text-black">Sufyan Caldwell</p>
+                <p class="text-base">Sufyan Caldwell</p>
                 <span class="text-base disabled-fg">11:58</span>
               </li>
             </ul>
@@ -150,10 +172,10 @@
 
           <!-- new note button -->
           <button
-            class="flex justify-center items-center gap-2 pl-4 py-2 pr-5 rounded-lg border border-color"
+            class="flex justify-center items-center gap-2 pl-4 py-2 pr-5 rounded-lg border border-color hover:bg-gray-100 active:bg-gray-200 cursor-pointer"
           >
             <img src="./assets/images/icons/Icons-13.svg" alt="plus" />
-            <p class="font-medium text-base text-black">New notes</p>
+            <p class="other-button">New notes</p>
           </button>
         </header>
         <!-- body section -->
@@ -161,14 +183,10 @@
           class="h-full flex flex-col justify-center items-start p-12 gray-bg overflow-y-auto"
         >
           <!-- subtitle -->
-          <span class="font-ch-main font-medium text-xl text-black opacity-60">
-            Hi, Jane
-          </span>
+          <span class="desktop-subtitle text-xl opacity-60"> Hi, Jane </span>
 
           <!-- heading -->
-          <h2 class="font-ch-main font-medium text-4xl text-ch-black">
-            What would you like to do?
-          </h2>
+          <h2 class="desktop-h2 primary-fg mt-2">What would you like to do?</h2>
 
           <!-- cards -->
           <div
@@ -181,15 +199,13 @@
                 class="h-12 w-12 flex justify-center items-center border border-color rounded-full"
               >
                 <img
-                  class="text-black"
+                  class=""
                   src="./assets/images/icons/Icons-9.svg"
                   alt="tick"
                 />
               </div>
-              <p class="mt-6 mb-2 font-medium text-base text-black">
-                Suggested
-              </p>
-              <span class="text-base text-black">
+              <p class="mt-6 mb-2 body-regular-bold">Suggested</p>
+              <span class="body-regular">
                 Robert booked for 2 white fillings in upper 1A and upper 1B.
               </span>
             </div>
@@ -201,15 +217,13 @@
                 class="h-12 w-12 flex justify-center items-center border border-color rounded-full"
               >
                 <img
-                  class="text-black"
+                  class=""
                   src="./assets/images/icons/Icons-10.svg"
                   alt="tick"
                 />
               </div>
-              <p class="mt-6 mb-2 font-medium text-base text-black">
-                Continue from previous
-              </p>
-              <span class="text-base text-black">
+              <p class="mt-6 mb-2 body-regular-bold">Continue from previous</p>
+              <span class="body-regular">
                 Tooth ache and sensitivity in upper 1A.
               </span>
             </div>
@@ -221,15 +235,13 @@
                 class="h-12 w-12 flex justify-center items-center border border-color rounded-full"
               >
                 <img
-                  class="text-black"
+                  class=""
                   src="./assets/images/icons/Icons-12.svg"
                   alt="tick"
                 />
               </div>
-              <p class="mt-6 mb-2 font-medium text-base text-black">
-                Update profile
-              </p>
-              <span class="text-base text-black">
+              <p class="mt-6 mb-2 body-regular-bold">Update profile</p>
+              <span class="body-regular">
                 Go to patient profile to add new information.
               </span>
             </div>
@@ -241,15 +253,13 @@
                 class="h-12 w-12 flex justify-center items-center border border-color rounded-full"
               >
                 <img
-                  class="text-black"
+                  class=""
                   src="./assets/images/icons/Icons-13.svg"
                   alt="tick"
                 />
               </div>
-              <p class="mt-6 mb-2 font-medium text-base text-black">
-                Periodontitis
-              </p>
-              <span class="text-base text-black">
+              <p class="mt-6 mb-2 body-regular-bold">Periodontitis</p>
+              <span class="body-regular">
                 Bring up template for Periodontitis, rady to populate.
               </span>
             </div>
@@ -268,12 +278,10 @@
             </p>
           </div>
           <button
-            class="h-12 min-w-48 flex justify-center items-center gap-2 pl-4 pr-5 py-2 primary-bg rounded-lg"
+            class="h-12 min-w-48 flex justify-center items-center gap-2 pl-4 pr-5 py-2 primary-bg rounded-lg cursor-pointer"
           >
             <img src="./assets/images/icons/Icons-14.svg" alt="" />
-            <span class="font-medium text-base text-black"
-              >Start transcribing</span
-            >
+            <span class="other-button">Start transcribing</span>
           </button>
         </div>
       </main>
@@ -296,10 +304,7 @@
             />
           </button>
           <!-- heading -->
-          <p
-            id="transcriptionHeading"
-            class="font-medium text-base text-black hidden"
-          >
+          <p id="transcriptionHeading" class="body-regular-bold hidden">
             Transcription
           </p>
           <!-- book -->

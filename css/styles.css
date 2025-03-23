@@ -4,19 +4,37 @@
   --color-ch-black: #212121;
   --color-ch-primary-dark: #296660;
   --color-ch-primary: #4dd1c4;
+  --color-ch-primary-hover: #64d5ca;
+  --color-ch-primary-active: #77e3d9;
   --color-ch-primary-light: #dbf6f3;
   --color-ch-text-gray: #666666;
   --color-ch-text-disabled: #9e9e9e;
   --color-ch-outline: #e0e0e0;
   --color-ch-surface-gray: #f7f7f7;
   --color-ch-white: #ffffff;
+}
 
-  --font-ch-main: "Aeonik";
+@font-face {
+  font-family: "Aeonik-Bold";
+  src: url("../assets/fonts/Aeonik-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Aeonik-Medium";
+  src: url("../assets/fonts/Aeonik-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Aeonik-Regular";
+  src: url("../assets/fonts/Aeonik-Regular.ttf") format("truetype");
+  font-weight: normal;
 }
 
 body {
   color: var(--color-ch-black);
-  font-family: var(--font-ch-main), sans-serif;
+  font-family: "Aeonik-Regular", sans-serif;
 }
 
 .gray-bg {
@@ -43,6 +61,14 @@ body {
   background-color: var(--color-ch-primary);
 }
 
+.primary-bg:hover {
+  background-color: var(--color-ch-primary-hover);
+}
+
+.primary-bg:active {
+  background-color: var(--color-ch-primary-active);
+}
+
 .primary-active-bg {
   background-color: var(--color-ch-primary-light);
 }
@@ -57,20 +83,20 @@ body {
 }
 
 .body-regular-bold {
-  font-weight: 500;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 16px;
   line-height: 20px;
 }
 
 .other-button {
-  font-weight: 500;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 2%;
 }
 
 .desktop-subtitle {
-  font-weight: 500;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 21px;
   line-height: 24px;
   letter-spacing: -0.5%;
@@ -79,18 +105,13 @@ body {
 }
 
 .desktop-h2 {
-  font-weight: 500;
+  font-family: "Aeonik-Medium", sans-serif;
   font-size: 38px;
   line-height: 40px;
   letter-spacing: -0.5%;
   color: var(--color-ch-black);
 }
 
-/* @layer base {
-  h1 {
-    font-size: var(--text-2xl);
-  }
-  h2 {
-    font-size: var(--text-xl);
-  }
-} */
+.navLink:active {
+  background-color: var(--color-ch-primary-light);
+}
